@@ -20,7 +20,7 @@ const getJSDate = (days) => {
 (async () => {
   const { title, dueInDays } = argv;
   if (!title || dueInDays === undefined) {
-    throw new Error("title and dueInDays are required. \nSample command: node addTodo.js --title=\"Buy milk\" --dueInDays=-2 ")
+    throw new Error("title and dueInDays are required. \nsample command: node addTodo.js --title=\"Buy milk\" --dueInDays=-2 ")
   }
   await createTodo({ title, dueDate: getJSDate(dueInDays), completed: false })
   await db.Todo.showList();
