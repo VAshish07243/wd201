@@ -3,8 +3,8 @@ const db = require("./models/index");
 const listTodo = async () => {
   try {
     await db.Todo.showList();
-  } catch (error) {
-    console.error(error);
+  } catch (Error) {
+    console.error(Error);
   }
 };
 (async () => {
