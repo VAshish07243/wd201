@@ -43,7 +43,7 @@ describe("Todo test suite", () => {
     expect(all[0].completed).toBe(true);
   });
 
-  test("should retrieve a todo as due today", () => {
+  test("Should retrieve a todo as due today", () => {
     expect(all.length).toBe(3);
 
     const k = dueToday();
@@ -51,7 +51,7 @@ describe("Todo test suite", () => {
     expect(k.length).toBe(1);
   });
 
-  test("should retrieve a todo as overdue", () => {
+  test("Should retrieve a todo as overdue", () => {
     let k = [];
     expect(k.length).toBe(0);
 
@@ -59,7 +59,7 @@ describe("Todo test suite", () => {
     expect(k.length).toBe(1);
   });
 
-  test("should retrieve a todo as due later", () => {
+  test("Should retrieve a todo as due later", () => {
     let k = [];
     expect(k.length).toBe(0);
 
